@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+	body{
+    	background-color:#ccc;
+    }
+
+	button{
+    	padding: 15px;
+        width: 150px;
+        height:auto;
+        background-color: white;
+        border:2px solid black;
+    }
+    
+    button:hover{
+    	background-color: black;
+        color:white;
+    }
+
+
+
+</style>
+<body id="BG">
+<img id="snoopy" src="https://post-phinf.pstatic.net/MjAxODA1MDNfMTg3/MDAxNTI1Mjg2NDg4MDc2.OKZfk_wA-fTJb8JsVnwiQDdbXb-vWA7mbjVI0WVJ0MMg.vWfX8vL8z1RHEShOhIQTLMI54mWTAOKWU8J7CTy8MNYg.JPEG/ffffffff.jpg?type=w1200" width="400px">
+<h2>SNOOPY</h2>
+<button type="button" onclick="changeImage1()">HI</button>
+<button type="button" onclick="changeImage2()">HI</button>
+
+
+<script>
+
+var numberOfClicks=0;
+
+var Image1="https://post-phinf.pstatic.net/MjAxODA1MDNfMTg3/MDAxNTI1Mjg2NDg4MDc2.OKZfk_wA-fTJb8JsVnwiQDdbXb-vWA7mbjVI0WVJ0MMg.vWfX8vL8z1RHEShOhIQTLMI54mWTAOKWU8J7CTy8MNYg.JPEG/ffffffff.jpg?type=w1200";
+var Image2="https://scontent-nrt1-1.cdninstagram.com/vp/7e91ba71c3611822cc514b2f4fe79177/5C1B07F4/t51.2885-15/e35/19227670_323211891446309_7226679145814556672_n.jpg";
+
+function changeImage1()
+{
+	var imageElement=document.getElementById("snoopy");
+    imageElement.src=Image1;
+}
+
+function changeImage2()
+{
+	var imageElement=document.getElementById("snoopy");
+    imageElement.src=Image2;
+}
+
+
+
+
+
+var bodyElement= document.getElementById("BG");
+
+	//bodyElement.innerHTML="red";
+    
+    bodyElement.style.backgroundColor = "red";
+    
+function changeBGRed()
+{
+
+	var bodyElement= document.getElementById("BG");
+	bodyElement.style.backgroundColor = "red";
+    
+    clickedButton();
+    
+
+}
+
+function changeBGBlue()
+{
+	var bodyElement= document.getElementById("BG");
+	bodyElement.style.backgroundColor = "blue";
+    clickedButton();
+}
+
+
+
+
+</script>
+
+</body>
+</html>
